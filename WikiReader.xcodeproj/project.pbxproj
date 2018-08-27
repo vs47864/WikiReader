@@ -7,21 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2204A432125D2390082D7D5 /* HorizontalPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2204A412125D2390082D7D5 /* HorizontalPickerVC.swift */; };
+		B2204A442125D2390082D7D5 /* HorizontalPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2204A422125D2390082D7D5 /* HorizontalPickerVC.xib */; };
+		B2204A52212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2204A51212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift */; };
+		B27CB6E721349B5400249829 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CB6E621349B5400249829 /* NetworkingService.swift */; };
+		B27CB6EA21349CEB00249829 /* WikiRandomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CB6E921349CEB00249829 /* WikiRandomeResponse.swift */; };
+		B27CB6EC21349E5500249829 /* WikiTextResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CB6EB21349E5500249829 /* WikiTextResponse.swift */; };
+		B27E9ED82134A7C7008328AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27E9ED72134A7C7008328AF /* Assets.xcassets */; };
+		B27E9EDB2134AA45008328AF /* HorizontalPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9ED92134AA45008328AF /* HorizontalPickerCell.swift */; };
+		B27E9EDF2134AD6B008328AF /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27E9EDD2134AD6A008328AF /* SnapKit.framework */; };
+		B27E9EE02134AD6B008328AF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27E9EDE2134AD6B008328AF /* Alamofire.framework */; };
+		B27E9EE32134ADB7008328AF /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27E9EE12134ADB7008328AF /* SnapKit.framework */; };
+		B27E9EE42134ADB7008328AF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27E9EE22134ADB7008328AF /* Alamofire.framework */; };
 		B2C252042121AD1800F2D451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C252032121AD1800F2D451 /* AppDelegate.swift */; };
-		B2C252062121AD1800F2D451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C252052121AD1800F2D451 /* ViewController.swift */; };
-		B2C252092121AD1800F2D451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C252072121AD1800F2D451 /* Main.storyboard */; };
-		B2C2520B2121AD1A00F2D451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2C2520A2121AD1A00F2D451 /* Assets.xcassets */; };
 		B2C2520E2121AD1A00F2D451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C2520C2121AD1A00F2D451 /* LaunchScreen.storyboard */; };
+		B2C252172121AD5800F2D451 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C252152121AD5800F2D451 /* MainViewController.swift */; };
+		B2C252182121AD5800F2D451 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C252162121AD5800F2D451 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B2204A4B212613C00082D7D5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B2204A412125D2390082D7D5 /* HorizontalPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerVC.swift; sourceTree = "<group>"; };
+		B2204A422125D2390082D7D5 /* HorizontalPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalPickerVC.xib; sourceTree = "<group>"; };
+		B2204A51212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		B27CB6E621349B5400249829 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		B27CB6E921349CEB00249829 /* WikiRandomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiRandomeResponse.swift; sourceTree = "<group>"; };
+		B27CB6EB21349E5500249829 /* WikiTextResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiTextResponse.swift; sourceTree = "<group>"; };
+		B27E9ED72134A7C7008328AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B27E9ED92134AA45008328AF /* HorizontalPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerCell.swift; sourceTree = "<group>"; };
+		B27E9EDD2134AD6A008328AF /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
+		B27E9EDE2134AD6B008328AF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		B27E9EE12134ADB7008328AF /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../../.Trash/SnapKit.framework; sourceTree = "<group>"; };
+		B27E9EE22134ADB7008328AF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../../.Trash/Alamofire.framework; sourceTree = "<group>"; };
 		B2C252002121AD1800F2D451 /* WikiReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C252032121AD1800F2D451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2C252052121AD1800F2D451 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2C252082121AD1800F2D451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B2C2520A2121AD1A00F2D451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2C2520D2121AD1A00F2D451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2C2520F2121AD1A00F2D451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2C252152121AD5800F2D451 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B2C252162121AD5800F2D451 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +63,88 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27E9EE32134ADB7008328AF /* SnapKit.framework in Frameworks */,
+				B27E9EDF2134AD6B008328AF /* SnapKit.framework in Frameworks */,
+				B27E9EE02134AD6B008328AF /* Alamofire.framework in Frameworks */,
+				B27E9EE42134ADB7008328AF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2204A3F2125D2070082D7D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2C2520C2121AD1A00F2D451 /* LaunchScreen.storyboard */,
+				B2C2520F2121AD1A00F2D451 /* Info.plist */,
+				B27E9ED72134A7C7008328AF /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2204A402125D21A0082D7D5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B2204A5021261AFF0082D7D5 /* HorizonatlPicker */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B2204A45212612990082D7D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B27E9EE22134ADB7008328AF /* Alamofire.framework */,
+				B27E9EE12134ADB7008328AF /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2204A5021261AFF0082D7D5 /* HorizonatlPicker */ = {
+			isa = PBXGroup;
+			children = (
+				B27E9ED42134A50A008328AF /* Cells */,
+				B2204A412125D2390082D7D5 /* HorizontalPickerVC.swift */,
+				B2204A422125D2390082D7D5 /* HorizontalPickerVC.xib */,
+				B2204A51212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift */,
+			);
+			path = HorizonatlPicker;
+			sourceTree = "<group>";
+		};
+		B27CB6E521349B2B00249829 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B27CB6E821349CD500249829 /* Data */,
+				B27CB6E621349B5400249829 /* NetworkingService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B27CB6E821349CD500249829 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B27CB6E921349CEB00249829 /* WikiRandomeResponse.swift */,
+				B27CB6EB21349E5500249829 /* WikiTextResponse.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B27E9ED42134A50A008328AF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B27E9ED92134AA45008328AF /* HorizontalPickerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		B2C251F72121AD1800F2D451 = {
 			isa = PBXGroup;
 			children = (
+				B27E9EDE2134AD6B008328AF /* Alamofire.framework */,
+				B27E9EDD2134AD6A008328AF /* SnapKit.framework */,
 				B2C252022121AD1800F2D451 /* WikiReader */,
 				B2C252012121AD1800F2D451 /* Products */,
+				B2204A45212612990082D7D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +160,11 @@
 			isa = PBXGroup;
 			children = (
 				B2C252032121AD1800F2D451 /* AppDelegate.swift */,
-				B2C252052121AD1800F2D451 /* ViewController.swift */,
-				B2C252072121AD1800F2D451 /* Main.storyboard */,
-				B2C2520A2121AD1A00F2D451 /* Assets.xcassets */,
-				B2C2520C2121AD1A00F2D451 /* LaunchScreen.storyboard */,
-				B2C2520F2121AD1A00F2D451 /* Info.plist */,
+				B2C252152121AD5800F2D451 /* MainViewController.swift */,
+				B2C252162121AD5800F2D451 /* MainViewController.xib */,
+				B2204A402125D21A0082D7D5 /* Components */,
+				B27CB6E521349B2B00249829 /* Networking */,
+				B2204A3F2125D2070082D7D5 /* Supporting Files */,
 			);
 			path = WikiReader;
 			sourceTree = "<group>";
@@ -74,6 +179,8 @@
 				B2C251FC2121AD1800F2D451 /* Sources */,
 				B2C251FD2121AD1800F2D451 /* Frameworks */,
 				B2C251FE2121AD1800F2D451 /* Resources */,
+				B2204A4A212612FF0082D7D5 /* ShellScript */,
+				B2204A4B212613C00082D7D5 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -122,35 +229,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2204A442125D2390082D7D5 /* HorizontalPickerVC.xib in Resources */,
 				B2C2520E2121AD1A00F2D451 /* LaunchScreen.storyboard in Resources */,
-				B2C2520B2121AD1A00F2D451 /* Assets.xcassets in Resources */,
-				B2C252092121AD1800F2D451 /* Main.storyboard in Resources */,
+				B27E9ED82134A7C7008328AF /* Assets.xcassets in Resources */,
+				B2C252182121AD5800F2D451 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2204A4A212612FF0082D7D5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2C251FC2121AD1800F2D451 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2C252062121AD1800F2D451 /* ViewController.swift in Sources */,
+				B2204A432125D2390082D7D5 /* HorizontalPickerVC.swift in Sources */,
+				B27CB6E721349B5400249829 /* NetworkingService.swift in Sources */,
 				B2C252042121AD1800F2D451 /* AppDelegate.swift in Sources */,
+				B27CB6EA21349CEB00249829 /* WikiRandomeResponse.swift in Sources */,
+				B2204A52212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift in Sources */,
+				B27E9EDB2134AA45008328AF /* HorizontalPickerCell.swift in Sources */,
+				B2C252172121AD5800F2D451 /* MainViewController.swift in Sources */,
+				B27CB6EC21349E5500249829 /* WikiTextResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B2C252072121AD1800F2D451 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2C252082121AD1800F2D451 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B2C2520C2121AD1A00F2D451 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,7 +406,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UV6U5MPL6V;
-				INFOPLIST_FILE = WikiReader/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WikiReader/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +429,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UV6U5MPL6V;
-				INFOPLIST_FILE = WikiReader/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WikiReader/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
