@@ -25,8 +25,8 @@ class HorizontalPickerCollectionViewFlowLayout: UICollectionViewFlowLayout {
     
     private func setup() {
         scrollDirection = .horizontal
-        minimumLineSpacing = -60
-        itemSize = CGSize(width: collectionView!.bounds.width + minimumLineSpacing, height: collectionView!.bounds.height / 2)
+        minimumLineSpacing = 12
+        itemSize = CGSize(width: 256, height: 80)
         
         let inset = (collectionView!.bounds.width - itemSize.width) / 2
         collectionView!.contentInset = .init(top: 0, left: inset, bottom: 0, right: inset)

@@ -18,6 +18,7 @@ class HorizontalPickerVC: UIViewController {
         
         collectionView.register(HorizontalPickerCell.self, forCellWithReuseIdentifier: cellIdentifier)
         collectionView.dataSource = self
+        collectionView.showsHorizontalScrollIndicator = false
         collectionView.collectionViewLayout = HorizontalPickerCollectionViewFlowLayout()
 
     }

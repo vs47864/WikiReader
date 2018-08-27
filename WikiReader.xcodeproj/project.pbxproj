@@ -15,10 +15,10 @@
 		B27CB6EC21349E5500249829 /* WikiTextResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CB6EB21349E5500249829 /* WikiTextResponse.swift */; };
 		B27E9ED82134A7C7008328AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27E9ED72134A7C7008328AF /* Assets.xcassets */; };
 		B27E9EDB2134AA45008328AF /* HorizontalPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9ED92134AA45008328AF /* HorizontalPickerCell.swift */; };
-		B27E9EDF2134AD6B008328AF /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27E9EDD2134AD6A008328AF /* SnapKit.framework */; };
-		B27E9EE02134AD6B008328AF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27E9EDE2134AD6B008328AF /* Alamofire.framework */; };
 		B27E9EE32134ADB7008328AF /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27E9EE12134ADB7008328AF /* SnapKit.framework */; };
 		B27E9EE42134ADB7008328AF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27E9EE22134ADB7008328AF /* Alamofire.framework */; };
+		B27E9EE72134AFF0008328AF /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B27E9EE22134ADB7008328AF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B27E9EE82134AFF2008328AF /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B27E9EE12134ADB7008328AF /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2C252042121AD1800F2D451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C252032121AD1800F2D451 /* AppDelegate.swift */; };
 		B2C2520E2121AD1A00F2D451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C2520C2121AD1A00F2D451 /* LaunchScreen.storyboard */; };
 		B2C252172121AD5800F2D451 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C252152121AD5800F2D451 /* MainViewController.swift */; };
@@ -32,6 +32,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B27E9EE72134AFF0008328AF /* Alamofire.framework in CopyFiles */,
+				B27E9EE82134AFF2008328AF /* SnapKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,8 +48,6 @@
 		B27CB6EB21349E5500249829 /* WikiTextResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiTextResponse.swift; sourceTree = "<group>"; };
 		B27E9ED72134A7C7008328AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B27E9ED92134AA45008328AF /* HorizontalPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerCell.swift; sourceTree = "<group>"; };
-		B27E9EDD2134AD6A008328AF /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
-		B27E9EDE2134AD6B008328AF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		B27E9EE12134ADB7008328AF /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../../.Trash/SnapKit.framework; sourceTree = "<group>"; };
 		B27E9EE22134ADB7008328AF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../../.Trash/Alamofire.framework; sourceTree = "<group>"; };
 		B2C252002121AD1800F2D451 /* WikiReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,8 +64,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B27E9EE32134ADB7008328AF /* SnapKit.framework in Frameworks */,
-				B27E9EDF2134AD6B008328AF /* SnapKit.framework in Frameworks */,
-				B27E9EE02134AD6B008328AF /* Alamofire.framework in Frameworks */,
 				B27E9EE42134ADB7008328AF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,8 +138,6 @@
 		B2C251F72121AD1800F2D451 = {
 			isa = PBXGroup;
 			children = (
-				B27E9EDE2134AD6B008328AF /* Alamofire.framework */,
-				B27E9EDD2134AD6A008328AF /* SnapKit.framework */,
 				B2C252022121AD1800F2D451 /* WikiReader */,
 				B2C252012121AD1800F2D451 /* Products */,
 				B2204A45212612990082D7D5 /* Frameworks */,
