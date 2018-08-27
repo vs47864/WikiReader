@@ -17,6 +17,8 @@
 		B27E9EDB2134AA45008328AF /* HorizontalPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9ED92134AA45008328AF /* HorizontalPickerCell.swift */; };
 		B27E9EEA2134B298008328AF /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B27E9EE92134B298008328AF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B27E9EEC2134B2A0008328AF /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B27E9EEB2134B2A0008328AF /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B27E9EF02134BB4A008328AF /* TextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9EEE2134BB4A008328AF /* TextViewVC.swift */; };
+		B27E9EF12134BB4A008328AF /* TextViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27E9EEF2134BB4A008328AF /* TextViewVC.xib */; };
 		B2C252042121AD1800F2D451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C252032121AD1800F2D451 /* AppDelegate.swift */; };
 		B2C2520E2121AD1A00F2D451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C2520C2121AD1A00F2D451 /* LaunchScreen.storyboard */; };
 		B2C252172121AD5800F2D451 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C252152121AD5800F2D451 /* MainViewController.swift */; };
@@ -48,6 +50,8 @@
 		B27E9ED92134AA45008328AF /* HorizontalPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerCell.swift; sourceTree = "<group>"; };
 		B27E9EE92134B298008328AF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B27E9EEB2134B2A0008328AF /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		B27E9EEE2134BB4A008328AF /* TextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewVC.swift; sourceTree = "<group>"; };
+		B27E9EEF2134BB4A008328AF /* TextViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewVC.xib; sourceTree = "<group>"; };
 		B2C252002121AD1800F2D451 /* WikiReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C252032121AD1800F2D451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2C2520D2121AD1A00F2D451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 		B2204A402125D21A0082D7D5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B27E9EED2134BB1B008328AF /* TextView */,
 				B2204A5021261AFF0082D7D5 /* HorizonatlPicker */,
 			);
 			path = Components;
@@ -129,6 +134,15 @@
 				B27E9ED92134AA45008328AF /* HorizontalPickerCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		B27E9EED2134BB1B008328AF /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				B27E9EEE2134BB4A008328AF /* TextViewVC.swift */,
+				B27E9EEF2134BB4A008328AF /* TextViewVC.xib */,
+			);
+			path = TextView;
 			sourceTree = "<group>";
 		};
 		B2C251F72121AD1800F2D451 = {
@@ -225,6 +239,7 @@
 				B2C2520E2121AD1A00F2D451 /* LaunchScreen.storyboard in Resources */,
 				B27E9ED82134A7C7008328AF /* Assets.xcassets in Resources */,
 				B2C252182121AD5800F2D451 /* MainViewController.xib in Resources */,
+				B27E9EF12134BB4A008328AF /* TextViewVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +270,7 @@
 			files = (
 				B2204A432125D2390082D7D5 /* HorizontalPickerVC.swift in Sources */,
 				B27CB6E721349B5400249829 /* NetworkingService.swift in Sources */,
+				B27E9EF02134BB4A008328AF /* TextViewVC.swift in Sources */,
 				B2C252042121AD1800F2D451 /* AppDelegate.swift in Sources */,
 				B27CB6EA21349CEB00249829 /* WikiRandomeResponse.swift in Sources */,
 				B2204A52212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift in Sources */,

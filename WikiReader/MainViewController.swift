@@ -12,6 +12,8 @@ import SnapKit
 class MainViewController: UIViewController {
     
     var horizonatlPickerVC: HorizontalPickerVC!
+    var textViewVC: TextViewVC!
+    
 
     override func viewDidLoad()
     {
@@ -25,8 +27,19 @@ class MainViewController: UIViewController {
         horizonatlPickerVC.view.snp.makeConstraints { (make) in
             make.top.equalTo(self.view.snp.topMargin)
             make.leading.trailing.equalTo(self.view)
-            make.height.equalTo(250)
+            make.height.equalTo(112)
         }
+        
+        textViewVC = TextViewVC()
+        addChildViewController(textViewVC)
+        self.view.addSubview(textViewVC.view)
+        
+        textViewVC.view.snp.makeConstraints { (make) in
+            make.top.equalTo(self.horizonatlPickerVC.view.snp.bottom)
+            make.bottom.leading.trailing.equalTo(self.view).inset(16)
+        }
+        
+
         
     }
 

@@ -18,9 +18,9 @@ class HorizontalPickerVC: UIViewController {
         
         collectionView.register(HorizontalPickerCell.self, forCellWithReuseIdentifier: cellIdentifier)
         collectionView.dataSource = self
+        collectionView.delegate = self;
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.collectionViewLayout = HorizontalPickerCollectionViewFlowLayout()
-
     }
 }
 
@@ -35,5 +35,24 @@ extension HorizontalPickerVC: UICollectionViewDataSource {
         
         cell.lblTitle.text = "\(indexPath.row)"
         return cell
+    }
+}
+
+extension HorizontalPickerVC: UIScrollViewDelegate
+{
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let center = CGPoint(x: collectionView.contentOffset.x + collectionView.frame.size.width/2, y: collectionView.contentOffset.y + collectionView.frame.size.height/2)
+        
+        let indePath = collectionView.indexPathForItem(at: center)
+        
+        //TODO add da se pozove za tekst
+    }
+}
+
+extension HorizontalPickerVC: UICollectionViewDelegate
+{
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath)
+    {
+        //TODO lazy load ako je predzadnji index
     }
 }

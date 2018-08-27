@@ -13,7 +13,9 @@ class HorizontalPickerCell: UICollectionViewCell {
     lazy var lblTitle: UILabel = {
         let view = UILabel()
         view.textAlignment = .center
-        view.backgroundColor = .orange
+        view.numberOfLines = 0
+
+        view.textColor = .white
         return view
     }()
     
@@ -23,17 +25,15 @@ class HorizontalPickerCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        self.backgroundColor = UIColor(red: 14/255.0, green: 89/255.0, blue: 216/255.0, alpha: 1)
         contentView.addSubview(lblTitle)
         contentView.clipsToBounds = true
         lblTitle.translatesAutoresizingMaskIntoConstraints = false
-        //TODO to snapkit
-        NSLayoutConstraint.activate([
-            lblTitle.topAnchor.constraint(equalTo: contentView.topAnchor),
-            lblTitle.rightAnchor.constraint(equalTo: contentView.rightAnchor),
-            lblTitle.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            lblTitle.leftAnchor.constraint(equalTo: contentView.leftAnchor)
-            ])
+        lblTitle.snp.makeConstraints { (make) in
+            make.top.bottom.equalTo(self.contentView)
+            make.leading.trailing.equalTo(self.contentView).inset(8)
+        }
+
     }
 
 }

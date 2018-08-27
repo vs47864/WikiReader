@@ -25,41 +25,17 @@ class HorizontalPickerCollectionViewFlowLayout: UICollectionViewFlowLayout {
     
     private func setup() {
         scrollDirection = .horizontal
-        minimumLineSpacing = 12
+        minimumLineSpacing = 16
+        minimumInteritemSpacing = 16
         itemSize = CGSize(width: 256, height: 80)
-        
-        let inset = (collectionView!.bounds.width - itemSize.width) / 2
-        collectionView!.contentInset = .init(top: 0, left: inset, bottom: 0, right: inset)
+        let sideMargin = (UIScreen.main.bounds.size.width - itemSize.width )/2
+        sectionInset = UIEdgeInsetsMake(0, sideMargin, 0, sideMargin)
     }
     
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         return true
     }
     
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        guard let allAttributes = super.layoutAttributesForElements(in: rect) else { return nil }
-        
-        for attributes in allAttributes {
-            let collectionCenter = collectionView!.bounds.size.width / 2
-            let offset = collectionView!.contentOffset.x
-            let normalizedCenter = attributes.center.x - offset
-            
-            let maxDistance = itemSize.width + minimumLineSpacing
-            let distanceFromCenter = min(collectionCenter - normalizedCenter, maxDistance)
-            let ratio = (maxDistance - abs(distanceFromCenter)) / maxDistance
-            
-            let alpha = ratio * (1 - smallItemAlpha) + smallItemAlpha
-            let scale = ratio * (1 - smallItemScale) + smallItemScale
-            attributes.alpha = alpha
-            
-            let angleToSet = distanceFromCenter / (collectionView!.bounds.width / 2)
-            var transform = CATransform3DScale(CATransform3DIdentity, scale, scale, 1)
-            transform.m34 = 1.0 / 400
-            transform = CATransform3DRotate(transform, angleToSet, 0, 1, 0)
-            attributes.transform3D = transform
-        }
-        return allAttributes
-    }
     
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
         
