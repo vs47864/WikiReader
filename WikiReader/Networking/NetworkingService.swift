@@ -16,7 +16,7 @@ class NetworkingService
 
     func getRandomArticles(completion: @escaping (_ wikiRandomResponse : WikiResponse?) -> Void)
     {
-        guard let url = URL(string: "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=random&grnnamespace=0&grnlimit=5") else {
+        guard let url = URL(string: Constants.randomURL) else {
             completion(nil)
             return
         }
@@ -52,7 +52,7 @@ class NetworkingService
         }
         else{
             let titleWithoutSpave = title.replacingOccurrences(of: " ", with: "%20")
-            guard let url = URL(string: "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=" + titleWithoutSpave) else {
+            guard let url = URL(string: Constants.articalURL + titleWithoutSpave) else {
                 completion(nil)
                 return
             }

@@ -11,15 +11,17 @@ import SnapKit
 
 class MainViewController: UIViewController {
     
-    var horizonatlPickerVC: HorizontalPickerVC!
+    var horizontalPickerVC: HorizontalPickerVC!
     var textViewVC: TextViewVC!
+    var mainVM: MainVMProtocol!
+
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.title = "Wiki Random"
+        self.title = mainVM.getTitle()
         self.setHorizonatalPicker()
         self.setContentVC()
         self.view.bringSubview(toFront: activityIndicator)
@@ -27,7 +29,7 @@ class MainViewController: UIViewController {
     
     func setHorizonatalPicker()
     {
-        horizonatlPickerVC = HorizontalPickerVC()
+        horizontalPickerVC = HorizontalPickerVC()
         let horizontalPickerVM = HorizontalPickerVM()
         horizontalPickerVM.onStartText = {
             self.activityIndicator.startAnimating()
@@ -36,12 +38,12 @@ class MainViewController: UIViewController {
             self.textViewVC.textView.text = text
             self.activityIndicator.stopAnimating()
         }
-        horizonatlPickerVC.horizonalPickerVM = horizontalPickerVM
-        addChildViewController(horizonatlPickerVC)
-        self.view.addSubview(horizonatlPickerVC.view)
-        horizonatlPickerVC.didMove(toParentViewController: self)
+        horizontalPickerVC.horizontalPickerVM = horizontalPickerVM
+        addChildViewController(horizontalPickerVC)
+        self.view.addSubview(horizontalPickerVC.view)
+        horizontalPickerVC.didMove(toParentViewController: self)
         
-        horizonatlPickerVC.view.snp.makeConstraints { (make) in
+        horizontalPickerVC.view.snp.makeConstraints { (make) in
             make.top.equalTo(self.view.snp.topMargin)
             make.leading.trailing.equalTo(self.view)
             make.height.equalTo(112)
@@ -55,8 +57,13 @@ class MainViewController: UIViewController {
         self.view.addSubview(textViewVC.view)
         
         textViewVC.view.snp.makeConstraints { (make) in
-            make.top.equalTo(self.horizonatlPickerVC.view.snp.bottom)
+            make.top.equalTo(self.horizontalPickerVC.view.snp.bottom)
             make.bottom.leading.trailing.equalTo(self.view).inset(16)
         }
     }
+}
+
+protocol MainVMProtocol
+{
+    func getTitle() -> String
 }

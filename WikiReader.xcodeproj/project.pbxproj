@@ -19,6 +19,10 @@
 		B27E9EF02134BB4A008328AF /* TextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9EEE2134BB4A008328AF /* TextViewVC.swift */; };
 		B27E9EF12134BB4A008328AF /* TextViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27E9EEF2134BB4A008328AF /* TextViewVC.xib */; };
 		B27E9EF32134BE4E008328AF /* HorizontalPickerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9EF22134BE4E008328AF /* HorizontalPickerVM.swift */; };
+		B27E9EF6213547A2008328AF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9EF5213547A2008328AF /* Coordinator.swift */; };
+		B27E9EFA213547DE008328AF /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9EF9213547DE008328AF /* MainCoordinator.swift */; };
+		B27E9EFC2135495A008328AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9EFB2135495A008328AF /* Constants.swift */; };
+		B27E9EFE213549A5008328AF /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9EFD213549A5008328AF /* MainViewModel.swift */; };
 		B2C252042121AD1800F2D451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C252032121AD1800F2D451 /* AppDelegate.swift */; };
 		B2C2520E2121AD1A00F2D451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C2520C2121AD1A00F2D451 /* LaunchScreen.storyboard */; };
 		B2C252172121AD5800F2D451 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C252152121AD5800F2D451 /* MainViewController.swift */; };
@@ -52,6 +56,10 @@
 		B27E9EEE2134BB4A008328AF /* TextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewVC.swift; sourceTree = "<group>"; };
 		B27E9EEF2134BB4A008328AF /* TextViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewVC.xib; sourceTree = "<group>"; };
 		B27E9EF22134BE4E008328AF /* HorizontalPickerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerVM.swift; sourceTree = "<group>"; };
+		B27E9EF5213547A2008328AF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B27E9EF9213547DE008328AF /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		B27E9EFB2135495A008328AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B27E9EFD213549A5008328AF /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		B2C252002121AD1800F2D451 /* WikiReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C252032121AD1800F2D451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2C2520D2121AD1A00F2D451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +82,7 @@
 		B2204A3F2125D2070082D7D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B27E9EFB2135495A008328AF /* Constants.swift */,
 				B2C2520C2121AD1A00F2D451 /* LaunchScreen.storyboard */,
 				B2C2520F2121AD1A00F2D451 /* Info.plist */,
 				B27E9ED72134A7C7008328AF /* Assets.xcassets */,
@@ -84,6 +93,7 @@
 		B2204A402125D21A0082D7D5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B27E9EF7213547B8008328AF /* Main */,
 				B27E9EED2134BB1B008328AF /* TextView */,
 				B2204A5021261AFF0082D7D5 /* HorizonatlPicker */,
 			);
@@ -145,6 +155,25 @@
 			path = TextView;
 			sourceTree = "<group>";
 		};
+		B27E9EF421354781008328AF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B27E9EF5213547A2008328AF /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B27E9EF7213547B8008328AF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B2C252152121AD5800F2D451 /* MainViewController.swift */,
+				B2C252162121AD5800F2D451 /* MainViewController.xib */,
+				B27E9EF9213547DE008328AF /* MainCoordinator.swift */,
+				B27E9EFD213549A5008328AF /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		B2C251F72121AD1800F2D451 = {
 			isa = PBXGroup;
 			children = (
@@ -166,8 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				B2C252032121AD1800F2D451 /* AppDelegate.swift */,
-				B2C252152121AD5800F2D451 /* MainViewController.swift */,
-				B2C252162121AD5800F2D451 /* MainViewController.xib */,
+				B27E9EF421354781008328AF /* Coordinator */,
 				B2204A402125D21A0082D7D5 /* Components */,
 				B27CB6E521349B2B00249829 /* Networking */,
 				B2204A3F2125D2070082D7D5 /* Supporting Files */,
@@ -270,13 +298,17 @@
 			files = (
 				B2204A432125D2390082D7D5 /* HorizontalPickerVC.swift in Sources */,
 				B27CB6E721349B5400249829 /* NetworkingService.swift in Sources */,
+				B27E9EF6213547A2008328AF /* Coordinator.swift in Sources */,
 				B27E9EF02134BB4A008328AF /* TextViewVC.swift in Sources */,
 				B2C252042121AD1800F2D451 /* AppDelegate.swift in Sources */,
+				B27E9EFE213549A5008328AF /* MainViewModel.swift in Sources */,
+				B27E9EFA213547DE008328AF /* MainCoordinator.swift in Sources */,
 				B27CB6EA21349CEB00249829 /* WikiResponse.swift in Sources */,
 				B2204A52212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift in Sources */,
 				B27E9EF32134BE4E008328AF /* HorizontalPickerVM.swift in Sources */,
 				B27E9EDB2134AA45008328AF /* HorizontalPickerCell.swift in Sources */,
 				B2C252172121AD5800F2D451 /* MainViewController.swift in Sources */,
+				B27E9EFC2135495A008328AF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

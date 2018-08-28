@@ -12,12 +12,12 @@ class HorizontalPickerVC: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     private var cellIdentifier = "cell"
-    var horizonalPickerVM: HorizontalPickerVM!
+    var horizontalPickerVM: HorizontalPickerVM!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        horizonalPickerVM.delegate = self
+        horizontalPickerVM.delegate = self
         
         collectionView.register(HorizontalPickerCell.self, forCellWithReuseIdentifier: cellIdentifier)
         collectionView.dataSource = self
@@ -30,13 +30,13 @@ class HorizontalPickerVC: UIViewController {
 extension HorizontalPickerVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return horizonalPickerVM.getNumberOfArtcels()
+        return horizontalPickerVM.getNumberOfArtcels()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! HorizontalPickerCell
         
-        cell.lblTitle.text = horizonalPickerVM.getTitleForIndex(index: indexPath.row)
+        cell.lblTitle.text = horizontalPickerVM.getTitleForIndex(index: indexPath.row)
         return cell
     }
 }
@@ -48,7 +48,7 @@ extension HorizontalPickerVC: UIScrollViewDelegate
         
         let indePath = collectionView.indexPathForItem(at: center)
         
-        horizonalPickerVM.getArticleText(at: indePath?.row ?? 0)
+        horizontalPickerVM.getArticleText(at: indePath?.row ?? 0)
     }
 }
 
@@ -56,9 +56,9 @@ extension HorizontalPickerVC: UICollectionViewDelegate
 {
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath)
     {
-        if indexPath.row == horizonalPickerVM.getNumberOfArtcels()-1
+        if indexPath.row == horizontalPickerVM.getNumberOfArtcels()-1
         {
-            horizonalPickerVM.getNextFiveArticles()
+            horizontalPickerVM.getNextFiveArticles()
         }
     }
 }

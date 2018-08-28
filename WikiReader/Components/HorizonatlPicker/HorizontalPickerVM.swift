@@ -13,6 +13,7 @@ class HorizontalPickerVM
     var titles: [String]
     let networkingService: NetworkingService
     weak var delegate: HorizontalPickerVMDelegate?
+    var start = true
     var onStartText: (()->())?
     var onCompleteText: ((_ text: String)->())?
 
@@ -49,6 +50,11 @@ extension HorizontalPickerVM: HorizontalPickerVMProtocol
                     }
                 }
                 self.delegate?.updatePicker()
+                if self.start
+                {
+                    self.start = false
+                    self.getArticleText(at: 0)
+                }
             }
         }
     }
