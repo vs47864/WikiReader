@@ -14,12 +14,29 @@ class MainViewController: UIViewController {
     var horizonatlPickerVC: HorizontalPickerVC!
     var textViewVC: TextViewVC!
     
-
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         self.title = "Wiki Random"
+        self.setHorizonatalPicker()
+        self.setContentVC()
+        self.view.bringSubview(toFront: activityIndicator)
+    }
+    
+    func setHorizonatalPicker()
+    {
         horizonatlPickerVC = HorizontalPickerVC()
+        let horizontalPickerVM = HorizontalPickerVM()
+        horizontalPickerVM.onStartText = {
+            self.activityIndicator.startAnimating()
+        }
+        horizontalPickerVM.onCompleteText = { (text) in
+            self.textViewVC.textView.text = text
+            self.activityIndicator.stopAnimating()
+        }
+        horizonatlPickerVC.horizonalPickerVM = horizontalPickerVM
         addChildViewController(horizonatlPickerVC)
         self.view.addSubview(horizonatlPickerVC.view)
         horizonatlPickerVC.didMove(toParentViewController: self)
@@ -29,7 +46,10 @@ class MainViewController: UIViewController {
             make.leading.trailing.equalTo(self.view)
             make.height.equalTo(112)
         }
-        
+    }
+    
+    func setContentVC()
+    {
         textViewVC = TextViewVC()
         addChildViewController(textViewVC)
         self.view.addSubview(textViewVC.view)
@@ -38,10 +58,5 @@ class MainViewController: UIViewController {
             make.top.equalTo(self.horizonatlPickerVC.view.snp.bottom)
             make.bottom.leading.trailing.equalTo(self.view).inset(16)
         }
-        
-
-        
     }
-
-
 }

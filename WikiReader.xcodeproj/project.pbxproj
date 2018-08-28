@@ -11,14 +11,14 @@
 		B2204A442125D2390082D7D5 /* HorizontalPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2204A422125D2390082D7D5 /* HorizontalPickerVC.xib */; };
 		B2204A52212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2204A51212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift */; };
 		B27CB6E721349B5400249829 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CB6E621349B5400249829 /* NetworkingService.swift */; };
-		B27CB6EA21349CEB00249829 /* WikiRandomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CB6E921349CEB00249829 /* WikiRandomeResponse.swift */; };
-		B27CB6EC21349E5500249829 /* WikiTextResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CB6EB21349E5500249829 /* WikiTextResponse.swift */; };
+		B27CB6EA21349CEB00249829 /* WikiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CB6E921349CEB00249829 /* WikiResponse.swift */; };
 		B27E9ED82134A7C7008328AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27E9ED72134A7C7008328AF /* Assets.xcassets */; };
 		B27E9EDB2134AA45008328AF /* HorizontalPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9ED92134AA45008328AF /* HorizontalPickerCell.swift */; };
 		B27E9EEA2134B298008328AF /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B27E9EE92134B298008328AF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B27E9EEC2134B2A0008328AF /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B27E9EEB2134B2A0008328AF /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B27E9EF02134BB4A008328AF /* TextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9EEE2134BB4A008328AF /* TextViewVC.swift */; };
 		B27E9EF12134BB4A008328AF /* TextViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27E9EEF2134BB4A008328AF /* TextViewVC.xib */; };
+		B27E9EF32134BE4E008328AF /* HorizontalPickerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E9EF22134BE4E008328AF /* HorizontalPickerVM.swift */; };
 		B2C252042121AD1800F2D451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C252032121AD1800F2D451 /* AppDelegate.swift */; };
 		B2C2520E2121AD1A00F2D451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C2520C2121AD1A00F2D451 /* LaunchScreen.storyboard */; };
 		B2C252172121AD5800F2D451 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C252152121AD5800F2D451 /* MainViewController.swift */; };
@@ -44,14 +44,14 @@
 		B2204A422125D2390082D7D5 /* HorizontalPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalPickerVC.xib; sourceTree = "<group>"; };
 		B2204A51212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		B27CB6E621349B5400249829 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
-		B27CB6E921349CEB00249829 /* WikiRandomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiRandomeResponse.swift; sourceTree = "<group>"; };
-		B27CB6EB21349E5500249829 /* WikiTextResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiTextResponse.swift; sourceTree = "<group>"; };
+		B27CB6E921349CEB00249829 /* WikiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiResponse.swift; sourceTree = "<group>"; };
 		B27E9ED72134A7C7008328AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B27E9ED92134AA45008328AF /* HorizontalPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerCell.swift; sourceTree = "<group>"; };
 		B27E9EE92134B298008328AF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B27E9EEB2134B2A0008328AF /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		B27E9EEE2134BB4A008328AF /* TextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewVC.swift; sourceTree = "<group>"; };
 		B27E9EEF2134BB4A008328AF /* TextViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewVC.xib; sourceTree = "<group>"; };
+		B27E9EF22134BE4E008328AF /* HorizontalPickerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerVM.swift; sourceTree = "<group>"; };
 		B2C252002121AD1800F2D451 /* WikiReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C252032121AD1800F2D451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2C2520D2121AD1A00F2D451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,6 +104,7 @@
 			children = (
 				B27E9ED42134A50A008328AF /* Cells */,
 				B2204A412125D2390082D7D5 /* HorizontalPickerVC.swift */,
+				B27E9EF22134BE4E008328AF /* HorizontalPickerVM.swift */,
 				B2204A422125D2390082D7D5 /* HorizontalPickerVC.xib */,
 				B2204A51212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift */,
 			);
@@ -122,8 +123,7 @@
 		B27CB6E821349CD500249829 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				B27CB6E921349CEB00249829 /* WikiRandomeResponse.swift */,
-				B27CB6EB21349E5500249829 /* WikiTextResponse.swift */,
+				B27CB6E921349CEB00249829 /* WikiResponse.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -272,11 +272,11 @@
 				B27CB6E721349B5400249829 /* NetworkingService.swift in Sources */,
 				B27E9EF02134BB4A008328AF /* TextViewVC.swift in Sources */,
 				B2C252042121AD1800F2D451 /* AppDelegate.swift in Sources */,
-				B27CB6EA21349CEB00249829 /* WikiRandomeResponse.swift in Sources */,
+				B27CB6EA21349CEB00249829 /* WikiResponse.swift in Sources */,
 				B2204A52212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift in Sources */,
+				B27E9EF32134BE4E008328AF /* HorizontalPickerVM.swift in Sources */,
 				B27E9EDB2134AA45008328AF /* HorizontalPickerCell.swift in Sources */,
 				B2C252172121AD5800F2D451 /* MainViewController.swift in Sources */,
-				B27CB6EC21349E5500249829 /* WikiTextResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

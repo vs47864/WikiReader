@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct WikiRandomResponse: Codable {
+struct WikiResponse: Codable {
     let batchcomplete: String
-    let wikiRandomResponseContinue: Continue
+    let wikiRandomResponseContinue: Continue?
     let query: Query
     
     enum CodingKeys: String, CodingKey {
@@ -27,6 +27,7 @@ struct Query: Codable {
 struct Page: Codable {
     let ns, pageid: Int
     let title: String
+    let extract: String?
 }
 
 struct Continue: Codable {
