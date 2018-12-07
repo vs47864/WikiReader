@@ -14,7 +14,6 @@ class MainViewController: UIViewController {
     var horizontalPickerVC: HorizontalPickerVC!
     var textViewVC: TextViewVC!
     var mainVM: MainVMProtocol!
-
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     

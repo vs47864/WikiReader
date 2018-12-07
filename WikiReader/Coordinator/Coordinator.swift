@@ -16,5 +16,4 @@ protocol Coordinator
     init(_ rootNC: UINavigationController)
     
     func start()
-    
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B207C26B21BACF28001BA4EB /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B207C26A21BACF28001BA4EB /* UIColor+Additions.swift */; };
+		B207C26E21BAD1B2001BA4EB /* HorizontalPickerVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B207C26D21BAD1B2001BA4EB /* HorizontalPickerVMProtocol.swift */; };
 		B2204A432125D2390082D7D5 /* HorizontalPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2204A412125D2390082D7D5 /* HorizontalPickerVC.swift */; };
 		B2204A442125D2390082D7D5 /* HorizontalPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2204A422125D2390082D7D5 /* HorizontalPickerVC.xib */; };
 		B2204A52212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2204A51212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B207C26A21BACF28001BA4EB /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		B207C26D21BAD1B2001BA4EB /* HorizontalPickerVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerVMProtocol.swift; sourceTree = "<group>"; };
 		B2204A412125D2390082D7D5 /* HorizontalPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerVC.swift; sourceTree = "<group>"; };
 		B2204A422125D2390082D7D5 /* HorizontalPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalPickerVC.xib; sourceTree = "<group>"; };
 		B2204A51212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
@@ -79,9 +83,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B207C26C21BACF46001BA4EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B207C26A21BACF28001BA4EB /* UIColor+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B2204A3F2125D2070082D7D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B207C26C21BACF46001BA4EB /* Extensions */,
 				B27E9EFB2135495A008328AF /* Constants.swift */,
 				B2C2520C2121AD1A00F2D451 /* LaunchScreen.storyboard */,
 				B2C2520F2121AD1A00F2D451 /* Info.plist */,
@@ -117,6 +130,7 @@
 				B27E9EF22134BE4E008328AF /* HorizontalPickerVM.swift */,
 				B2204A422125D2390082D7D5 /* HorizontalPickerVC.xib */,
 				B2204A51212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift */,
+				B207C26D21BAD1B2001BA4EB /* HorizontalPickerVMProtocol.swift */,
 			);
 			path = HorizonatlPicker;
 			sourceTree = "<group>";
@@ -304,11 +318,13 @@
 				B27E9EFE213549A5008328AF /* MainViewModel.swift in Sources */,
 				B27E9EFA213547DE008328AF /* MainCoordinator.swift in Sources */,
 				B27CB6EA21349CEB00249829 /* WikiResponse.swift in Sources */,
+				B207C26E21BAD1B2001BA4EB /* HorizontalPickerVMProtocol.swift in Sources */,
 				B2204A52212624910082D7D5 /* HorizontalPickerCollectionViewFlowLayout.swift in Sources */,
 				B27E9EF32134BE4E008328AF /* HorizontalPickerVM.swift in Sources */,
 				B27E9EDB2134AA45008328AF /* HorizontalPickerCell.swift in Sources */,
 				B2C252172121AD5800F2D451 /* MainViewController.swift in Sources */,
 				B27E9EFC2135495A008328AF /* Constants.swift in Sources */,
+				B207C26B21BACF28001BA4EB /* UIColor+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UV6U5MPL6V;
+				DEVELOPMENT_TEAM = 49F474JV9K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -468,7 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UV6U5MPL6V;
+				DEVELOPMENT_TEAM = 49F474JV9K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

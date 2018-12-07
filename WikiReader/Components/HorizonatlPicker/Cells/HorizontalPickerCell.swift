@@ -8,13 +8,14 @@
 
 import UIKit
 
+let cellIdentifier = "HorizontalPickerCell"
+
 class HorizontalPickerCell: UICollectionViewCell {
 
     lazy var lblTitle: UILabel = {
         let view = UILabel()
         view.textAlignment = .center
         view.numberOfLines = 0
-
         view.textColor = .white
         return view
     }()
@@ -25,7 +26,7 @@ class HorizontalPickerCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor(red: 14/255.0, green: 89/255.0, blue: 216/255.0, alpha: 1)
+        self.backgroundColor = .cellColor
         contentView.addSubview(lblTitle)
         contentView.clipsToBounds = true
         lblTitle.translatesAutoresizingMaskIntoConstraints = false

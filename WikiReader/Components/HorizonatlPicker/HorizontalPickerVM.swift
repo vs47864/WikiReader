@@ -23,7 +23,6 @@ class HorizontalPickerVM
         networkingService = NetworkingService()
         getNextFiveArticles()
     }
-    
 }
 
 extension HorizontalPickerVM: HorizontalPickerVMProtocol

@@ -11,7 +11,6 @@ import UIKit
 class HorizontalPickerVC: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    private var cellIdentifier = "cell"
     var horizontalPickerVM: HorizontalPickerVM!
     
     override func viewDidLoad() {
@@ -68,12 +67,4 @@ extension HorizontalPickerVC: HorizontalPickerVMDelegate
     func updatePicker() {
         self.collectionView.reloadData()
     }
-}
-
-protocol HorizontalPickerVMProtocol
-{
-    func getNumberOfArtcels() -> Int
-    func getTitleForIndex(index: Int) -> String
-    func getNextFiveArticles()
-    func getArticleText(at index: Int)
 }
